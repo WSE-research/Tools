@@ -100,6 +100,4 @@ Integration into a GUI as well as a console application could be useful.
 To generate such images, we are providing here an interactive web application for conveniently configuring the generation process and comparing the results.
 Our https://github.com/WSE-research/image-to-ascii-art[**Image to ASCII converter**] integrates several existing approaches and provides export options for SVG, PNG, and plain ASCII data.
 
----
-
 
