@@ -14,14 +14,20 @@ endif::[]
 
 Here, is a summary of tools implemented by the http://wse-research.org/[WSE group] to help in your development or research process.
 All are located in their own GitHub repositories.
+Brief descriptions of these (multiple repository) initiatives are provided below.
+
+toc::[]
 
 ---
 
+== Tools for working with data
+
 ++++
+<br>
 <a href="https://github.com/search?q=topic%3AXML-to-RDF+org%3AWSE-research&type=Repositories"><img align="right" role="right" width="256" src="https://github.com/WSE-research/XML2RDF-converter-Web-UI/blob/main/images/XML-to-RDF-using-DTD.png?raw=true"/></a>
 ++++
 
-== XML2RDF converter
+=== XML2RDF converter
 
 If you want to translate well-modeled XML data to RDF, then this tool might become very handy.
 Here, the Document Type Definition (DTD) file (i.e., the modeling of the XML data) is used to recognize the structures of the XML data and to automatically generate equivalent RDF data.
@@ -31,13 +37,63 @@ The initiative provides two tools:
 * https://github.com/WSE-research/XML2RDF-converter[**XML2RDF converter web service**]: A web service for integration into automatic processes
 * https://github.com/WSE-research/XML2RDF-converter-web-UI[**XML2RDF converter web UI**]: An interactive web application for controlling the conversion process without technical knowledge
 
----
+++++
+<br>
+<a href="https://github.com/WSE-research/RDF-data-converter-and-beautifier/" title="go to GitHub repository">
+<img align="right" role="right" height="128" src="https://github.com/WSE-research/RDF-data-converter-and-beautifier/blob/main/images/rdf_data_converter_and_beautifier.png?raw=true"/>
+</a>
+++++
+
+=== RDF data converter and beautifier
+
+One of the strengths of RDF is the built-in feature that it can be represented by different equivalent data formats. 
+Hence, one can transform RDF data from one representation to another without losing information. 
+Our https://github.com/WSE-research/RDF-data-converter-and-beautifier/[**RDF data converter and beautifier**] enables users to interactively convert RDF data between different formats.
+On top, one can format the RDF data, too.
 
 ++++
+<br>
+++++
+
+=== LingaF - Metrics for text documents
+
+https://github.com/WSE-research/LinguaF[**LinguaF**] provides easy access for researchers and developers to methods of quantitative language analysis, such as readability, complexity, diversity, and other descriptive statistics.
+The tool can be integrated as a Python library and is provided as a web service, too.
+
+++++
+<br>
+++++
+
+== Deployment
+
+++++
+<br>
+++++
+
+=== Easy Microservice Deployment
+
+There are many tools for deploying applications. 
+Here, we focussed on an approach that is lightweight, easy to integrate, and not depending on large infrastructure component.
+For this reason, we are providing a service that is (re-)deploying Docker images after receiving a web service request. 
+A typical use case would be the integration into a GitHub action, GitLab Runner, or any other CI tool. 
+However, it even works for non-cloud environments (e.g., local development).
+
+* https://github.com/WSE-research/microservice-updater[**Microservice Updater**] is the web service receiving assignments to deploy a service via an HTTP request on a predefined slot.
+* https://github.com/WSE-research/docker-service-updater[**Docker Service Updater**] is a GitHub Action prepared completely to send a request to the Microservice Updater based on a simple configuration file. 
+* https://github.com/WSE-research/microservice-updater-frontend[**Microservice Updater Frontend**] provides a web frontend for registering, updating, and deleting slots of microservices.
+
+++++
+<br>
+++++
+
+== Fun
+
+++++
+<br>
 <a href="https://github.com/WSE-research/image-to-ascii-art"><img align="right" role="right" height="128" src="https://github.com/WSE-research/image-to-ascii-art/blob/main/images/image-to-ascii-art-logo.png?raw=true"/></a>
 ++++
 
-== Image To ASCII Converter
+=== Image To ASCII Converter
 
 ASCII art can be used to spice up your project. 
 Integration into a GUI as well as a console application could be useful.
@@ -46,23 +102,4 @@ Our https://github.com/WSE-research/image-to-ascii-art[**Image to ASCII converte
 
 ---
 
-++++
-<a href="https://github.com/WSE-research/RDF-data-converter-and-beautifier/" title="go to GitHub repository">
-<img align="right" role="right" height="128" src="https://github.com/WSE-research/RDF-data-converter-and-beautifier/blob/main/images/rdf_data_converter_and_beautifier.png?raw=true"/>
-</a>
-++++
-
-== RDF data converter and beautifier
-
-One of the strengths of RDF is the built-in feature that it can be represented by different equivalent data formats. 
-Hence, one can transform RDF data from one representation to another without losing information. 
-Our https://github.com/WSE-research/RDF-data-converter-and-beautifier/[**RDF data converter and beautifier**] enables users to interactively convert RDF data between different formats.
-On top, one can format the RDF data, too.
-
----
-
-== LingaF
-
-https://github.com/WSE-research/LinguaF[**LinguaF**] provides easy access for researchers and developers to methods of quantitative language analysis, such as readability, complexity, diversity, and other descriptive statistics.
-The tool can be integrated as a Python library and is provided as a web service, too.
 
