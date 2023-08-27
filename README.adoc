@@ -64,7 +64,7 @@ The tool can be integrated as a Python library and is provided as a web service,
 <br>
 ++++
 
-== Deployment
+== Running Applications
 
 ++++
 <br>
@@ -81,6 +81,18 @@ However, it even works for non-cloud environments (e.g., local development).
 * https://github.com/WSE-research/microservice-updater[**Microservice Updater**] is the web service receiving assignments to deploy a service via an HTTP request on a predefined slot.
 * https://github.com/WSE-research/docker-service-updater[**Docker Service Updater**] is a GitHub Action prepared completely to send a request to the Microservice Updater based on a simple configuration file. 
 * https://github.com/WSE-research/microservice-updater-frontend[**Microservice Updater Frontend**] provides a web frontend for registering, updating, and deleting slots of microservices.
+
+++++
+<br>
+++++
+
+=== Health Status Check for Web Services as React Component
+
+The https://github.com/WSE-research/React-online-status-of-Spring-Boot-web-services[**Service Health Status Check**] is a customizable component for https://react.dev/[React].
+The intention of the component is to be integrated into a frontend application that depends on one or more web services (works best with Spring Boot web services or other ones that support standard health endpoints). 
+If done so, the health status of the backend service(s) would be shown in the frontend making it easy to recognize if there is a problem.
+The tool provides several visualizations and options for customization and the best possible integration.
+
 
 ++++
 <br>
