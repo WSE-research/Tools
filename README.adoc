@@ -10,10 +10,16 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-= Tools
+++++
+<br>
+<a href="http://wse-research.org"><img align="right" role="right" width="64" src="https://avatars.githubusercontent.com/u/120292474?s=400&u=b43285e1f1e9a6febca420a9c79b683f701ad5fa&v=4"/></a>
+++++
 
-Here, is a summary of tools implemented by the http://wse-research.org/[WSE group] to help in your development or research process.
-All are located in their own GitHub repositories.
+= WSE Research: Tools
+
+Our research is dedicated to the research of **W**eb and **S**oftware **E**ngineering always following our motto: _Let's do a**W**e**S**om**E** research together_.
+Here, is a summary of tools implemented by the http://wse-research.org/[WSE research group] to help in your development or research process.
+All are located in their own GitHub repositories, published as open source, and available as Docker images.
 Brief descriptions of these (multiple repository) initiatives are provided below.
 
 toc::[]
@@ -21,6 +27,33 @@ toc::[]
 ---
 
 == Tools for working with data
+
+++++
+<br>
+<a href="https://github.com/WSE-research/LLM-based-explanations-for-SPARQL-queries"><img align="right" role="right" width="128" src="https://github.com/WSE-research/LoRiS-LLM-generated-Representations-of-SPARQL-queries/blob/main/images/loris-small.png?raw=true"/></a>
+++++
+
+=== LoRiS – LLM-based natural-language representations for SPARQL queries over Wikidata and DBpedia
+
+Despite the ease of the triple form, learning the standard query language SPARQL and understanding SPARQL queries might become cumbersome. Hence, converting SPARQL to a native tongue might develop a deeper query structure understanding and mitigate possible mistakes made by developers.
+
+* https://wse-research.org/LoRiS-LLM-generated-representations-of-SPARQL-queries/[online demo]
+* https://github.com/WSE-research/LLM-based-explanations-for-SPARQL-queries[source code]
+
+
+++++
+<br>
+<a href="https://github.com/WSE-research/KinGVisher-Knowledge-Graph-Visualizer"><img align="right" role="right" width="128" src="https://github.com/wse-research/Knowledge-Graph-Visualizer/blob/main/images/kingvisher_512.png?raw=true"/></a>
+++++
+
+=== KinGVisher – Knowledge Graph Visualizer
+
+Our Knowledge Graph Visualizer is a tool to visualize knowledge graphs in a web browser. It uses existing RDF triplestore endpoints (e.g., DBpedia, Wikidata, or your private endpoint) to retrieve the data and visualize it. It provides a user-friendly interface for exploring the data and creating visualizations by defining resources that are used as starting points for graph exploration, white and black lists for predicates, and visual styles for the nodes and edges.
+
+* https://wse-research.org/knowledge-graph-visualizer/[online demo] 
+* https://github.com/WSE-research/KinGVisher-Knowledge-Graph-Visualizer[source code]
+
+
 
 ++++
 <br>
@@ -34,8 +67,9 @@ Here, the Document Type Definition (DTD) file (i.e., the modeling of the XML dat
 Hence, straight-forward conversion is possible with little chance of an error.
 The initiative provides two tools:
 
-* https://github.com/WSE-research/XML2RDF-converter[**XML2RDF converter web service**]: A web service for integration into automatic processes
-* https://github.com/WSE-research/XML2RDF-converter-web-UI[**XML2RDF converter web UI**]: An interactive web application for controlling the conversion process without technical knowledge
+* https://wse-research.org/xml-to-rdf-converter-web-ui/[online demo]
+* source code: https://github.com/WSE-research/XML2RDF-converter[**XML2RDF converter web service**]: A web service for integration into automatic processes
+* source code: https://github.com/WSE-research/XML2RDF-converter-web-UI[**XML2RDF converter web UI**]: An interactive web application for controlling the conversion process without technical knowledge
 
 ++++
 <br>
@@ -50,6 +84,9 @@ One of the strengths of RDF is the built-in feature that it can be represented b
 Hence, one can transform RDF data from one representation to another without losing information. 
 Our https://github.com/WSE-research/RDF-data-converter-and-beautifier/[**RDF data converter and beautifier**] enables users to interactively convert RDF data between different formats.
 On top, one can format the RDF data, too.
+
+* https://wse-research.org/rdf-data-converter-and-beautifier/[online demo]
+* https://github.com/WSE-research/RDF-data-converter-and-beautifier/[source code]
 
 ++++
 <br>
@@ -73,14 +110,14 @@ The tool can be integrated as a Python library and is provided as a web service,
 === Easy Microservice Deployment
 
 There are many tools for deploying applications. 
-Here, we focussed on an approach that is lightweight, easy to integrate, and not depending on large infrastructure component.
+Here, we focussed on an approach that is lightweight, easy to integrate and does not depend on large infrastructure components.
 For this reason, we are providing a service that is (re-)deploying Docker images after receiving a web service request. 
 A typical use case would be the integration into a GitHub action, GitLab Runner, or any other CI tool. 
 However, it even works for non-cloud environments (e.g., local development).
 
-* https://github.com/WSE-research/microservice-updater[**Microservice Updater**] is the web service receiving assignments to deploy a service via an HTTP request on a predefined slot.
-* https://github.com/WSE-research/docker-service-updater[**Docker Service Updater**] is a GitHub Action prepared completely to send a request to the Microservice Updater based on a simple configuration file. 
-* https://github.com/WSE-research/microservice-updater-frontend[**Microservice Updater Frontend**] provides a web frontend for registering, updating, and deleting slots of microservices.
+* source code: https://github.com/WSE-research/microservice-updater[**Microservice Updater**] is the web service receiving assignments to deploy a service via an HTTP request on a predefined slot.
+* source code: https://github.com/WSE-research/docker-service-updater[**Docker Service Updater**] is a GitHub Action prepared completely to send a request to the Microservice Updater based on a simple configuration file. 
+* source code: https://github.com/WSE-research/microservice-updater-frontend[**Microservice Updater Frontend**] provides a web frontend for registering, updating, and deleting slots of microservices.
 
 ++++
 <br>
@@ -112,4 +149,6 @@ Integration into a GUI as well as a console application could be useful.
 To generate such images, we are providing here an interactive web application for conveniently configuring the generation process and comparing the results.
 Our https://github.com/WSE-research/image-to-ascii-art[**Image to ASCII converter**] integrates several existing approaches and provides export options for SVG, PNG, and plain ASCII data.
 
+* https://wse-research.org/image-to-ascii-art/[online demo]
+* https://github.com/WSE-research/image-to-ascii-art[source code]
 
