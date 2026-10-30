@@ -135,6 +135,59 @@ The tool provides several visualizations and options for customization and the b
 <br>
 ++++
 
+== Software Engineering
+
+++++
+<br>
+++++
+
+=== USE OCL for Visual Studio Code – UML/OCL models checked while you type
+
+Syntax highlighting and live validation of USE models (`.use`) and Soil scripts (`.soil`) in Visual Studio Code, checked by the compiler of https://github.com/useocl/use[USE 7.5] itself.
+Errors and warnings appear as squiggles in the editor and in the _Problems_ view, with USE's own messages; even the type-system warnings that USE prints without a position are placed on the expression that causes them, and Soil scripts are checked line by line, just as the USE shell reads them.
+No local USE installation is needed: the language server runs in a Docker or Podman container (with Java 21 and a local USE installation, it runs without one).
+The extension was made for the UML/OCL exercises of our software engineering course.
+
+* https://github.com/WSE-research/USE-OCL-vscode[source code]; the extension package `use-ocl.vsix` is attached to its https://github.com/WSE-research/USE-OCL-vscode/releases/latest[latest release]
+
+++++
+<br>
+++++
+
+== Talks and Meetings
+
+++++
+<br>
+<a href="https://wse-research.org/ActiveStage/"><img align="right" role="right" width="128" src="https://wse-research.org/ActiveStage/assets/icon.svg"/></a>
+++++
+
+=== WSE ActiveStage – put your presentation on stage
+
+WSE ActiveStage turns a PDF, an HTML slide deck, or a Google Slides presentation into a talk, right in the browser: one slide fills the screen, with a laser pointer, freehand ink, and text notes on every slide.
+Nothing to install and nothing uploaded – the files never leave the device, and the app even works offline.
+A phone becomes the remote control via QR code, and the audience can vote and ask questions live from their phones.
+
+* https://wse-research.org/ActiveStage/[online app]
+* https://github.com/WSE-research/WSE-ActiveStage[source code]
+
+++++
+<br>
+<a href="https://wse-research.org/transcribe/"><img align="right" role="right" width="128" src="https://wse-research.org/static/tools/wse-transcribe-wave.png"/></a>
+++++
+
+=== WSE-Transcribe – never lose a word of your meetings
+
+Upload a meeting recording – even hours long – and get a transcript in which every speaker is recognized, color-coded, and can be named.
+The transcript can be exported as text or Markdown, or stored directly in a Nextcloud.
+The service is available to members of the WSE research group (login via GitHub).
+
+* https://wse-research.org/transcribe/[online service] (for WSE members)
+* https://github.com/WSE-research/WSE-Transcribe[source code]
+
+++++
+<br>
+++++
+
 == Fun
 
 ++++
